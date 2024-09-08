@@ -31,7 +31,7 @@
    
     <div class="container">
         <h2>Submit Your Complaint</h2>
-        <form action="submit_complaint.php" method="POST" class="complaint-form">
+        <form action="project2.html" method="POST" class="complaint-form">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -66,7 +66,12 @@
                 <textarea id="complaint" name="complaint" placeholder="Describe your issue" required></textarea>
             </div>
             
-            <button class="btn-submit"> <a target="_blank" href="project2.html">Submit complaint</a></button>
+          <!--  <button class="btn-submit"> <a target="_blank" href="/project2.html">Submit complaint</a> </button> -->
+           <!-- <button class="btn-submit" onclick="location.href='/project2.html';">submit_complaint</button> -->
+          
+           <form action="project2.html">
+            <button class="btn-submit" type="submit">submit_complaint</button>
+        </form>
 
         </form>
   
